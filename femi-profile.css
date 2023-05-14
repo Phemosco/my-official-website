@@ -1,0 +1,382 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* End of all w3shool styling codes */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.35;
+    color: #333; /* a dark grey */
+  }
+  
+  /* Header/Blog Title */
+
+  div.header li {
+    list-style:none;
+    font-size: 20px;
+    text-align: start;
+    color: #1f1b1b;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    
+  }
+
+  .header li a:hover{
+    color: crimson;
+    background: none;
+}
+  .header{
+    background: url("images/hom.png") no-repeat center;
+    height: 80vh;
+    color: #fff;
+    padding: 30px;
+    width: 100%;
+    background-size: cover;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  .header-tag{
+    margin-left: 80px;
+    font-size: 60px;
+    font-weight: 600;
+  }
+
+  .header-name{
+    color: crimson;
+    text-shadow: -1px 1px 2px rgba(93,73,73,0.89);
+    display: grid;
+    margin: 0 0.5rem;
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 5s; /* don't forget to set a duration! */
+    cursor: grab;
+    padding-top: 100px;
+  }
+
+  .sub-header{
+    color:#333;
+    margin-top: 1em;
+    line-height: 1.5;
+    padding-top: 1em;
+    text-transform: capitalize;
+  }
+
+  .hire{
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 60px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+    text-decoration: none;
+
+}
+
+/* END of Header/Blog Title */
+
+
+/* beginning of body style */
+
+
+
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* image */
+  .fakeimg-1 {
+    border-radius: 81px 0px 51px 0px;
+    -webkit-border-radius: 81px 0px 51px 0px;
+    -moz-border-radius: 81px 0px 51px 0px;
+    width: 200px;
+    height: 207px;
+    object-fit: cover;
+    background-color: #e7dddd;
+    float: right;
+    margin: 0px 10px 0px 25px;
+    border: 5px solid beige;
+    
+    box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+-webkit-box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+-moz-box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+
+  }
+
+  .fakeimg-2 {
+    border-radius: 0px 81px 0px 51px;
+    -webkit-border-radius: 0px 81px 0px 51px;
+    -moz-border-radius: 0px 81px 0px 51px;
+    width: 200px;
+    height: 207px;
+    object-fit:cover;
+    background-color: #e7dddd;
+    float: left;
+    margin: 0px 25px 0px 10px;
+    border: 5px solid beige;
+
+    box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+  -webkit-box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+  -moz-box-shadow: 10px 10px 19px 6px rgba(0,0,0,0.49);
+  }
+
+  
+  /* paragraph */
+  p{
+    margin-bottom: 5px;
+    text-align: justify;
+    font-family: sans-serif;
+    margin-top: 1em;
+    line-height: 25px;
+    padding-top: 1em;
+  }
+  
+  ul p{
+    margin-left: 30%;
+    list-style: none;
+    line-height: 25px;
+  }
+  .para-link,p li a{
+    color: #3b2686;
+    font-size: normal;
+    text-decoration: none;
+    
+  }
+  .para-link,p li a:hover{
+    color: crimson;
+    background: none;
+}
+  
+  
+  
+  /* card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+
+  .career, .card-1 h1{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 600;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    line-height: 26.4px;
+    box-shadow: 10px 10px 60px 0px rgba(237,216,216,0.75);
+-webkit-box-shadow: 10px 10px 60px 0px rgba(237,216,216,0.75);
+-moz-box-shadow: 10px 10px 60px 0px rgba(237,216,216,0.75);
+    border: 1px solid whitesmoke; 
+  }
+
+  .card-1{
+    margin-top: 10px;
+    border: 20px white solid;
+    background-color: white;
+    margin-bottom: 40px;
+  }
+
+  .accordion {
+    background-color: rgb(216, 216, 216);
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ccc; 
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.171);
+    overflow: hidden;
+    border: 3px solid rgb(250, 245, 245);
+  }
+
+  .Quick {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 13px;
+ }
+ .fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .header{
+      height: 350px;
+      width: 100%;
+    }
+    p, li {
+      font-size: 20px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: 23px;
+   
+    }
+    .header-name{
+      padding-top: 80px;
+    }
+    .sub-header{
+      font-size: 33px;
+      font-weight: 600;
+      color: #111;
+    }
+ 
+  }
+  @media (max-width: 500px) {
+
+    div.header{
+        width: 100%;
+        height: 50%;
+        background: url("images/pexel.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .header li a{
+      padding: 0px;
+      background-color: #965858;
+      display: inline-block;
+      border: 2px solid red;
+      margin-bottom: 40px;
+      text-decoration: none;
+      color: white;
+    }
+
+    h1.header-tag{
+      display: none
+    }
+
+    h2.header-name{
+    max-width: fit-content;
+    color:#111;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    padding-top: 0;
+    }
+    div.row{
+      padding-bottom: none;
+    }
+    img.fakeimg-2,.fakeimg-1{
+      float: none;
+    }
+    p, li{
+      font-size: 20px;
+      line-height:25px;
+      text-align:initial;
+    }
+    
+  }
+
+/* End of all w3shool styling codes */
+
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: crimson;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
