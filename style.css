@@ -563,6 +563,9 @@ big, .navbar.sticky .logo a span{
   color: crimson;
   background: none;
 }
+.error {
+    color: red;
+  }
 /* footer section styling */
 footer{
     background: #111;
